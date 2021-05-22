@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://use.typekit.net/rit8joc.css" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Country Bot</title>
+    </head>
+    <body>
+        <header>
+            <img src="SVG/cb.svg" alt="Country Bot Logo" id="logo" />
+            <h1 class="header-text">
+                <span id="logo-az">A-Z</span> Country Bot
+            </h1>
+        </header>
+        <div id="main">
+            <div class="spacer"></div>
+            <div id="messages-window">
+                <div id="messages"></div>
+            </div>
+
+            <div id="message-send">
+                <form name="message-form" action="">
+                    <input
+                        type="textarea"
+                        autofocus
+                        rows="2"
+                        name="input-message"
+                        placeholder="Enter a country ..."
+                    />
+                    <input type="submit" name="submit-message" value="Send" />
+                </form>
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="countries.js"></script>
+        <script src="main.js"></script>
+    </body>
+</html>
